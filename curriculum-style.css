@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FF7A4F;
+}
+
+p {
+    font-size: 18px;
+    max-width: 450px;;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 900;
+    color: #014780;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    font-style: italic;
+
+    margin-bottom: 35px;
+}
+
+h3 {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-size: 35px;
+    color: #0271CC;
+
+    margin-bottom: 10px;
+}
+
+h3::before {
+    content: "";
+    display: block;
+    border-radius: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: #ffbb00;
+    width: calc(100% + 5%);
+    height: 35%;
+    opacity: 1;
+}
+
+h3:hover::before {
+    height: 75%;
+    background-color: #ff2949;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+#Curriculum {
+
+    font-family: 'Noto ;Sans HK', sans-serif;
+    font-size: 14px;
+    color: #038DFF;
+
+    background-color: white;
+    padding: 22px 150px 22px 150px;
+    position: relative;
+    padding-bottom: 25px;
+    
+}
+
+.Profiles, .Languages, .Contact {
+    margin-bottom: 15px;
+    padding: 15px;
+}
