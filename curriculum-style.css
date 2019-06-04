@@ -1,3 +1,4 @@
+/* Basic Styling */
 * {
     margin: 0;
     padding: 0;
@@ -10,23 +11,28 @@ a {
 
 p {
     font-size: 18px;
-    max-width: 450px;;
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 65px;
     font-weight: 900;
+    padding: 10px 0px 10px 20px;
+    margin-bottom: 22px;
+    
     color: #014780;
+    background-color: #ffbb00;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 500;
     font-style: italic;
 
     margin-bottom: 35px;
+    text-align: center;
 }
 
+/* Yellow Underlines */
 h3 {
     display: inline-block;
     position: relative;
@@ -56,26 +62,108 @@ h3:hover::before {
     height: 75%;
     background-color: #ff2949;
 }
+/* Yellow underline END */
 
 li {
     text-decoration: none;
     list-style: none;
-    text-align: left;
 }
-#Curriculum {
+
+#wrap {
+    display: grid;
+    grid-template-columns: 1fr 450px 450px 1fr;
+    grid-auto-rows:minmax(auto);
+    grid-template-areas:
+    ". Header Header ."
+    ". Profile Languages ."
+    ". Academics WorkExperience ."
+    ". Contact Contact .";
+    justify-content: center;
 
     font-family: 'Noto ;Sans HK', sans-serif;
     font-size: 14px;
-    color: #038DFF;
-
-    background-color: white;
-    padding: 22px 150px 22px 150px;
-    position: relative;
-    padding-bottom: 25px;
-    
+    color: #038DFF; 
+    background-image:url(lineborder.png);
+    background-repeat: repeat-y;
+    background-size: -45%;
 }
 
-.Profiles, .Languages, .Contact {
-    margin-bottom: 15px;
-    padding: 15px;
+.Curriculum li {
+    font-size: 18px;
+}
+
+.Academics, .WorkExperience {
+    background-color: #FF7A4F;
+}
+
+.Academics, .WorkExperience li {
+    color: azure;
+}
+
+.Academics, .WorkExperience h5 {
+    color: #014780;
+}
+
+.Contact p,a {
+    font-size: 18px;
+    color:#FF7A4F;   
+}
+
+.Header {
+    grid-area: Header;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+    padding: 30px;
+}
+
+.Profile {
+    grid-area: Profile;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    padding: 30px;
+}
+
+.Languages {
+    grid-area: Languages;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    padding: 30px;
+}
+
+.Contact {
+    grid-area: Contact;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+    padding: 30px;
+}
+
+.Academics {
+    grid-area: Academics;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    grid-column-start: 3;
+    padding: 30px;
+}
+
+.WorkExperience {
+    grid-area: WorkExperience;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+    grid-column-start: 3;
+    padding: 30px;
+}
+.Skills {
+    grid-area: Skills;
+    grid-row-start: 5;
+    grid-row-end: span 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    padding: 30px;
+    text-align: justify;
 }
