@@ -10,7 +10,13 @@ a {
 }
 
 p {
+    display: block;
     font-size: 18px;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
 }
 
 h1 {
@@ -64,9 +70,15 @@ h3:hover::before {
 }
 /* Yellow underline END */
 
-li {
-    text-decoration: none;
-    list-style: none;
+
+
+#wrap {
+    font-family: 'Noto ;Sans HK', sans-serif;
+    font-size: 18px;
+    color: #038DFF; 
+    background-image:url(lineborder.png);
+    background-repeat: repeat-y;
+    background-size: -45%;
 }
 
 #wrap {
@@ -77,26 +89,14 @@ li {
     ". Header Header ."
     ". Profile Languages ."
     ". Academics WorkExperience ."
-    ". Contact Contact .";
-    justify-content: center;
-
-    font-family: 'Noto ;Sans HK', sans-serif;
-    font-size: 14px;
-    color: #038DFF; 
-    background-image:url(lineborder.png);
-    background-repeat: repeat-y;
-    background-size: -45%;
-}
-
-.Curriculum li {
-    font-size: 18px;
+    ". Contact Contact .";    
 }
 
 .Academics, .WorkExperience {
     background-color: #FF7A4F;
 }
 
-.Academics, .WorkExperience li {
+.Academics li , .WorkExperience li {
     color: azure;
 }
 
@@ -120,6 +120,7 @@ li {
 .Profile {
     grid-area: Profile;
     grid-row-start: 3;
+    grid-row-end: 3;
     grid-column-start: 2;
     padding: 30px;
 }
