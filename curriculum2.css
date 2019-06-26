@@ -33,9 +33,10 @@ h2 {
 }
 .hero h1 {
     display: block;
-    max-width: 100vw;
     position: relative;
-    top: 3vh;
+    margin-bottom: 2rem;
+    top: 10vh;
+    max-width: 100vw;
     font-weight: 700;
     z-index: 10000;
 }
@@ -45,8 +46,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-content: center;
-    position: sticky;
-
+    z-index: 100;
     max-width: auto;
 
     height: 8vh;
@@ -60,7 +60,7 @@ h2 {
     display: block;
     flex-direction: row;
     position: relative;
-
+    font-weight: 600;
     font-size: 1.5vh;
 
     max-width: 100vw;
@@ -88,6 +88,7 @@ h2 {
 
 #profile h2 {
     display: block;
+    font-weight: 600;
     margin-bottom: 1rem;
 }
 
