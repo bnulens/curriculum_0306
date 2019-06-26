@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding:0;
+    text-align: justify;
 }
 
 a {
@@ -8,11 +9,12 @@ a {
     color: #4E00FF;
 }
 
-body {
-    font-family: font-family: ‘Cabin’, sans-serif;
+#curriculum {
+    font-family: 'Cabin', sans-serif;
     font-size: 2vh;
     color: #4E00FF;
     background-color: #FFF;
+    top: 100vh;
 }
 
 h1 {
@@ -24,18 +26,29 @@ h1 {
 
 h2 {
     display: block;
-    font-size: 3vh;
-
+    font-size: 4vh;
 }
 
+/* HERO */
+#hero {
+    max-width: 90vw;
+    position: relative;
+}
+
+#hero h1 {
+    display: block;
+    top: 18px;
+}
+
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: center;
     position: sticky;
 
-    max-height: 100vh;
     max-width: 100vw;
-    
+    height: 8vh;
+
     margin: 0;
     padding:0;
     background-color: #FFF;
@@ -46,44 +59,59 @@ h2 {
     display: block;
     flex-direction: row;
     position: relative;
-    justify-content: center;
 
-    font-size: 1.2vh;
+    font-size: 1.8vh;
 
-    max-height: 100vh;
     max-width: 100vw;
-    
 }
 
-#hero {
-    min-height: 100vh;
-    max-width: 90vw;
-}
-
+/* PROFILE */
 #profile {
     min-height: 100vh;
     max-width: 90vw;
+    padding-top: 25%;
 }
 
+#profile h2 {
+    display: block;
+}
+
+/* ACADEMICS */
 #academics {
     background-color: #FF7A4F;
     min-height: 100vh;
     max-width: 90vw;
+    padding-top: 25%;
 }
 
+/* EXPERIENCE */
 #experience {
     background-color: #FFB100;
     min-height: 100vh;
     max-width: 90vw;
+    padding-top: 25%;
 }
 
+#experience p {
+    padding-top: 10%;
+}
+
+/* LANG & SKILLS */
 #languagesandskills {
     background-color: #9D00FF;
     min-height: 100vh;
     max-width: 90vw;
+    padding-top: 25%;
+    color: #FFF;
 }
 
+#languagesandskills ul li {
+    text-decoration: none;
+}
+
+/* CONTACT */
 #contact {
     min-height: 100vh;
     max-width: 90vw;
+    padding-top: 25%;
 }
