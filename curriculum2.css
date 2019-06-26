@@ -37,6 +37,7 @@ h2 {
     position: relative;
     top: 3vh;
     font-weight: 700;
+    z-index: 10000;
 }
 
 /* NAVBAR */
@@ -67,50 +68,93 @@ h2 {
 /* BILDER */
 .bilder {
     min-height: 100vh;
+    max-width: 90vw;
+    margin-top: 1rem;
 }
-/* PROFILE */
-#profile {
+
+.bilder img {
     display: block;
+    transform: scale(0.9);
+    margin-bottom: 1rem;
+}
+
+#profile, #academics, #experience, #languagesandskills,
+#contact {
     min-height: 100vh;
     max-width: 90vw;
+    padding-top: 25%;
 }
+/* PROFILE */
 
 #profile h2 {
     display: block;
+    margin-bottom: 1rem;
 }
 
-#profile p {
+#profile .pro-content {
     display: block;
-    top: 15px;
+    padding-top: 5%;
 }
-
 /* ACADEMICS */
 #academics {
     background-color: #FF7A4F;
-    min-height: 100vh;
-    max-width: 90vw;
-    padding-top: 25%;
 }
 
+#academics h2 {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+
+#academics .school {
+    display: block;
+    padding-top: 5%;
+}
+
+#academics ul li {
+    display: block;
+    text-decoration: none;
+    padding-top: 8%;
+    padding-left: 5%;
+}
 /* EXPERIENCE */
 #experience {
     background-color: #FFB100;
-    min-height: 100vh;
-    max-width: 90vw;
-    padding-top: 25%;
 }
 
-#experience p {
-    padding-top: 10%;
+#experience h2 {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#experience .exp {
+    display: block;
+    padding-top: 5%;
+}
+
+#experience ul li {
+    display: block;
+    text-decoration: none;
+    padding-top: 8%;
+    padding-right: 5%;
+    text-align: right;
 }
 
 /* LANG & SKILLS */
 #languagesandskills {
     background-color: #9D00FF;
-    min-height: 100vh;
-    max-width: 90vw;
-    padding-top: 25%;
     color: #FFF;
+}
+
+#languagesandskills h2 {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 #languagesandskills ul li {
@@ -119,8 +163,3 @@ h2 {
 }
 
 /* CONTACT */
-#contact {
-    min-height: 100vh;
-    max-width: 90vw;
-    padding-top: 25%;
-}
