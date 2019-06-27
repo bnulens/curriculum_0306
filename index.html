@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,600,700&display=swap" rel="stylesheet">
     <title>Curriculum The Sequel</title>
 </head>
+<!-- SPYSCROLL -->
 <body id="curriculum" data-spy="scroll" data-target=".navbar" data-offset="150">
-    <div class="hero"><h1>Brecht Nulens</h1></div>
+   <div class="hero"><h1>Brecht Nulens</h1></div>
         <nav class="navbar navbar-expand navbar-inverse fixed-top">
             <ul class="navbar-nav">
                <li class="nav-item"><a class="nav-link" href="#profile">profile</a></li>
@@ -23,7 +24,129 @@
                <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
            </ul>
         </nav>
-    <div class="bilder"><img src="images/ben-krygsman-g8hHM7rc-kw-unsplash-small.jpg" alt=""></div>
+        <!-- CAROUSEL -->
+     <div id="container">
+         <input hidden type="radio" name="carousel-control" id="button_a"/>
+         <input hidden type="radio" name="carousel-control" id="button_b"/>
+         <input hidden type="radio" name="carousel-control" id="button_c"/>
+         <input hidden type="radio" name="carousel-control" id="button_d"/>            
+         <input hidden type="radio" name="carousel-control" id="button_e"/>
+         <div id="carousel">
+             <div class="p-wrapper">
+                 <section class="panel_a">
+                     <h2>profile</h2>
+                     <div class="pro-content">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, exercitationem veniam. 
+                     Impedit officiis ab, quaerat non iste libero placeat omnis natus labore iusto dignissimos 
+                     fugiat accusamus. Cum ab, eligendi illum facilis reiciendis libero mollitia voluptatum dolore 
+                     numquam quo architecto dolores vel expedita quae maiores enim quidem deserunt. Unde ducimus 
+                     magni doloremque nihil voluptatem dolorum eligendi necessitatibus maxime quidem sed.<br>
+                     "Aspiring junior web developer with emphasis on graphic design"<br>
+                     "Focused on continious learning and improvement. Spending spare time on Udemy, W3schools and 
+                     Laracasts."<br>
+                     __________________<br>
+                     nationality - Belgian <br>
+                     drivers license - Belgian cat.B <br>
+                     date of birth - 28 october 1995 <br>
+                     </div>
+                  </section>
+                  <section class="panel_b">
+                      <h2>academics</h2>
+                      <ul class="school">
+                      <li>
+                      <strong>2019 | T2 CAMPUS - BeCode Genk</strong><br>
+                        Junior Web Developer - Ongoing
+                      </li>
+                      <li>
+                          <strong>2018 | SYNTRA Genk</strong><br>
+                          Network Engineer - certified
+                      </li>
+                      <li>
+                          <strong>2014 - 2018 | PXL MAD-Faculty Hasselt</strong><br>
+                          Bachelor Graphic Design<br>
+                          completed 4 years; no degree awarded
+                      </li>
+                      <li>
+                          <strong>2013 - 2014	| MAD-Faculty Genk</strong><br>
+                          Bachelor Productdesign<br>
+                          completed first year; no degree awarded
+                      </li>
+                      <li>
+                          <strong>2007 - 2013 | Koninklijk Atheneum 1 Hasselt</strong><br>
+                          Latin - Modern Languages
+                      </li>
+                      </ul>
+                    </section>
+                    <section class="panel_c">
+                       <h2>experience</h2>
+                       <ul class="exp">
+                      <li>
+                         <strong>2011 - present | DE TENT - Hasselt</strong><br>
+                         staff member<br>
+                         member of organisation
+                      </li>
+                      <li>
+                         <strong>2017 | DE PLOEG - Diepenbeek</strong><br>
+                         service and attendance
+                         event host
+                      </li>
+                      <li>
+                         <strong>2016 | FESTIVAL DA COPA - Hasselt</strong><br>
+                         advertising
+                      </li>
+                      <li>
+                         <strong>2014 | FESTIVAL DA COPA - Hasselt</strong><br>
+                         member of external sponsors
+                         advertising
+                      </li>
+                       <li>
+                         <strong>2011 - 2017 | FIESTA EUROPA - Flanders</strong><br>
+                         staff member
+                         service and attendance
+                       </li>
+                       <li>
+                         <strong>2010 | RECYCLAGEPARK - Kuringen</strong><br>
+                         member of organisation
+                        </li>
+                        </ul>
+                     </section>
+                    <section class="panel_d">
+                        <h2>languages & skills</h2>
+                        <ul class="languages">     
+                          <li class="lang-item">Dutch</li>
+                          <li class="lang-item">English</li>
+                          <li class="lang-item">Spanish</li>
+                          <li class="lang-item">French</li>
+                          <br>
+                          <li class="lang-item">HTML</li>
+                          <li class="lang-item">CSS</li>
+                        </ul>
+                      <p class="skills">Adobe Photoshop • Illustrator • Indesign • Xd •
+                                        Visual Studio Code • Git • GitKraken • CLi • Ubuntu
+                                        MacOS • Virtualbox • VMWare • Routing & Switching • OSI
+                                        • pfSense
+                       </p>
+                     </section>
+                    <section class="panel_e">
+                       <h2>contact</h2>
+                       <ul> 
+                         <li>github/bnulens</li>
+                         <li>linkedin.com/in/brecht-nulens/</li>
+                         <li>brechtnulens@gmail.com</li>
+                      </ul>
+                     </section>
+                 </div> <!-- // .p-wrapper -->
+             </div> <!-- // #carousel -->            
+          <div id="navigation">
+              <label for="button_a" class="label_a"> <span>profile</span></label>
+              <label for="button_b" class="label_b"> <span>academics</span> </label>
+              <label for="button_c" class="label_c"> <span>experience</span> </label>
+              <label for="button_d" class="label_d"> <span>languages&skills</span></label>
+              <label for="button_e" class="label_e"> <span>contact</span></label>
+             </div> <!-- // #navigation -->               
+         </div> <!-- // #container -->
+     <!-- CV CONTENT -->
+    <div class="bilder"><img src="images/prescott-horn-HOojxvehPwQ-unsplash-small.jpg" alt=""></div>
         <section id="profile" class="container-fluid">
             <h2>profile</h2>
             <div class="pro-content">
@@ -82,7 +205,7 @@
                         event host
                </li>
                <li>
-                   <strong> | FESTIVAL DA COPA - Hasselt</strong><br>
+                   <strong>2016 | FESTIVAL DA COPA - Hasselt</strong><br>
                    advertising
                </li>
                <li>
@@ -119,11 +242,12 @@
                 </p>
         </section>
         <section id="contact" class="container-fluid">
-                <h2>contact</h2>
-                    <p> github/bnulens <br>
-                        linkedin.com/in/brecht-nulens/ <br>
-                        brechtnulens@gmail.com <br>
-                    </p>
+             <h2>contact</h2>
+                <ul> 
+                    <li>github/bnulens</li>
+                    <li>linkedin.com/in/brecht-nulens/</li>
+                    <li>brechtnulens@gmail.com</li>
+                </ul>
         </section>
-</body>
+ </body>
 </html>
