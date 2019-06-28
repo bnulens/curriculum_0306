@@ -23,6 +23,13 @@ a:hover {
     background-color: #FFF;
 }
 
+/* #curriculum::before {
+    content: url(images/cut_blue_gradient_small.png);
+    display: flex;
+    justify-content: center;
+    z-index: -10;
+} */
+
 h2 {
     display: block;
     font-size: 4vh;
@@ -65,22 +72,6 @@ h2 {
     font-size: 1.5vh;
 
     max-width: 100vw;
-}
-/* BILDER */
-.bilder {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    min-height: 100vh;
-    max-width: 90vw;
-    margin-top: 2rem;
-}
-
-.bilder img {
-    display: block;
-    justify-content: center;
-    transform: scale(0.9);
-    margin-bottom: 1rem;
 }
 
 #profile, #academics, #experience, #languagesandskills,
@@ -257,21 +248,58 @@ h2 {
     padding: 48px;
 }
 
+/* PANEL STYLING */
 .panel_a {
     background-color: #FFF;
 }
 .panel_b {
     background-color: #FFB100;
 }
+.panel_b h2 {
+    font-weight: 600;
+}
+.panel_b li {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
 .panel_c {
     background-color: #FF7A4F;
 }
+
+.panel_c h2 {
+    font-weight: 600;
+}
+.panel_c li {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
 .panel_d {
     background-color: #9D00FF;
     color: #FFF;
 }
+.panel_d h2 {
+    font-weight: 600;
+}
+.panel_d li {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
 .panel_e {
     background-color: #FFF;
+}
+.panel_e h2 {
+    font-weight: 600;
+}
+.panel_e li {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
 }
 
 #navigation {
@@ -291,10 +319,10 @@ h2 {
 }
             
 [class^="label_"]:hover {
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
     border-bottom: solid 2px #FF7A4F;
 }
-            
+
 @media only screen and (min-width: 868px) and (max-width: 1920px){
     .navbar {
         display: none;
