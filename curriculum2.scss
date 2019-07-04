@@ -1,6 +1,5 @@
 @import "vars","mixins";
 
-
 * {
     margin: 0;
     padding:0;
@@ -129,7 +128,7 @@ h2 {
 }
 
 #languagesandskills {
-    background-color: #9D00FF;
+    background-color: $purple;
     color: #FFF;
     h2 {
         display: flex;
@@ -188,6 +187,10 @@ h2 {
     border-radius: 4px;
     background-color: #fff;
 }
+
+#navigation {
+    margin-left: 50px;
+}
             
 .p-wrapper {
     position: relative;
@@ -232,9 +235,55 @@ h2 {
 // Panel Styling 
 
 .panel_a {
-    background-color: #fff;
+    @include panel_style;
 }
 
 .panel_b {
-    @include mixins;
+    @include panel_style;
+    background-color: $orange;
+}
+
+.panel_c {
+    @include panel_style;
+    background-color: $yellow;
+}
+
+.panel_d {
+    @include panel_style;
+    background-color: $purple;
+    color: #fff;
+}
+
+.panel_e {
+    @include panel_style;
+}
+
+[class^="label_"] {
+    display: block;
+    cursor: pointer;
+    margin: 8px 0;
+    height: 32px;
+    width: auto;
+    line-height: 32px;
+    text-align: left;
+    color: #4E00FF;
+    transition: all 0.3s ease;
+    :hover {
+        transition-duration: 0.1s;
+        border-bottom: solid 2px #FF7A4F;
+    }
+}
+
+@media only screen and (min-width: 868px) and (max-width: 1920px){
+    .navbar {
+        display: none;
+    }
+    .mobile-content {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 10vh;
+        font-weight: 700;
+    }
 }

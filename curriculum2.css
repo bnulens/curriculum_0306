@@ -225,6 +225,10 @@ h2 {
   background-color: #fff;
 }
 
+#navigation {
+  margin-left: 50px;
+}
+
 .p-wrapper {
   position: relative;
   width: 100%;
@@ -269,6 +273,108 @@ h2 {
 }
 
 .panel_a {
-  background-color: #fff;
+  background-color: #ffffff;
+}
+
+.panel_a h2 {
+  font-weight: 600;
+}
+
+.panel_a li {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.panel_b {
+  background-color: #ffffff;
+  background-color: #FF7A4F;
+}
+
+.panel_b h2 {
+  font-weight: 600;
+}
+
+.panel_b li {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.panel_c {
+  background-color: #ffffff;
+  background-color: #FFB100;
+}
+
+.panel_c h2 {
+  font-weight: 600;
+}
+
+.panel_c li {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.panel_d {
+  background-color: #ffffff;
+  background-color: #9D00FF;
+  color: #fff;
+}
+
+.panel_d h2 {
+  font-weight: 600;
+}
+
+.panel_d li {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.panel_e {
+  background-color: #ffffff;
+}
+
+.panel_e h2 {
+  font-weight: 600;
+}
+
+.panel_e li {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+[class^="label_"] {
+  display: block;
+  cursor: pointer;
+  margin: 8px 0;
+  height: 32px;
+  width: auto;
+  line-height: 32px;
+  text-align: left;
+  color: #4E00FF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+[class^="label_"] :hover {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  border-bottom: solid 2px #FF7A4F;
+}
+
+@media only screen and (min-width: 868px) and (max-width: 1920px) {
+  .navbar {
+    display: none;
+  }
+  .mobile-content {
+    display: none;
+  }
+  h1 {
+    font-size: 10vh;
+    font-weight: 700;
+  }
 }
 /*# sourceMappingURL=curriculum2.css.map */

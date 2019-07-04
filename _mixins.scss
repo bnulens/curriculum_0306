@@ -1,7 +1,7 @@
 @import "vars";
 
-.panel_b {
-    background-color: $yellow;
+@mixin panel_style () {
+    background-color: #ffffff;
     h2 {
         font-weight: 600;
     }
