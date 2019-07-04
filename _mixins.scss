@@ -1,0 +1,13 @@
+@import "vars";
+
+.panel_b {
+    background-color: $yellow;
+    h2 {
+        font-weight: 600;
+    }
+    li {
+        display: block;
+        text-decoration: none;
+        padding: 5px;
+    }
+}
