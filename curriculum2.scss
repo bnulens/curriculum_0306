@@ -163,26 +163,18 @@ h2 {
     }
 }
 
-@media only screen and (min-width: 100px) and (max-width: 868px){
-  
-    #container #carousel {
-        display: none;
-        min-height: 0vh;
-    }
-
-    #container #navigation {
-        display: none;
-    }
-}
-
 // IPAD TO DESKTOP SIZE
 #container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+
+    @media only screen and (max-width: 868px){
+        display: none;
+    }
 }
-            
+
 #carousel, #navigation {
     flex: initial;
     display: block;
